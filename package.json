@@ -1,0 +1,30 @@
+{
+  "name": "vue-firebaseui-localized",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-firebaseui-localized.es.js",
+      "require": "./dist/vue-firebaseui-localized.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "firebase": "^9.9.4",
+    "firebaseui": "^6.0.1",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
+  },
+  "dependencies": {
+    "@types/firebase": "^3.2.1"
+  }
+}
