@@ -9,12 +9,54 @@ let app;
 const emit = defineEmits(["error", "loaded"]);
 
 const props = defineProps({
-  auth: Object,
-  firebase: Object,
-  config: Object,
-  version: String,
-  lang: String,
-  rtl: Boolean,
+
+  /** 
+   * Your configuration options for Firebase UI, see referece https://github.com/firebase/firebaseui-web#configuration
+   */
+  config: {
+    Object,
+    required: true
+  },
+
+  /** 
+   * The firebase ui version you are using. NOTE: Must be the same version as your package.json version
+   */
+  version: {
+    String,
+    required: true
+  },
+
+  /**
+   * The language you want to use, for supported languages and their codes, look here: https://github.com/firebase/firebaseui-web/blob/master/LANGUAGES.md
+   */
+  lang: {
+    String,
+    required: true
+  },
+
+  /** 
+   * Pass in firebase that you have imported from firebase/compat/app
+   */
+  firebase: {
+    type: Object,
+    required: true
+  },
+
+  /** 
+   * Pass in your auth object that you get from getAuth(app)
+   */
+  auth: {
+    type: Object,
+    required: true
+  },
+
+  /** 
+   * Set to true if you're using a right-to-left language
+   */
+  rtl: {
+    Boolean,
+    required: false
+  },
 });
 
 const eject = (err) => {
