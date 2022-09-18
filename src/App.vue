@@ -6,7 +6,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const app = initializeApp({
-  apiKey: "AIzaSyAfYQebgYopm3nX8gjkpsG0RD4EZLeoIoQ",
+  apiKey: "your-unique-api-key-here",
 });
 const auth = getAuth(app);
 
