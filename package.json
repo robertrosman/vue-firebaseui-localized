@@ -2,6 +2,7 @@
   "name": "vue-firebaseui-localized",
   "version": "0.0.1",
   "type": "module",
+  "keywords": ["firebase", "localized", "vue", "firebaseui"],
   "exports": {
     ".": {
       "import": "./dist/vue-firebaseui-localized.es.js",
@@ -26,5 +27,10 @@
   },
   "dependencies": {
     "@types/firebase": "^3.2.1"
+  },
+  "author": "Robert Rosman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertrosman/vue-firebaseui-localized.git"
   }
 }
