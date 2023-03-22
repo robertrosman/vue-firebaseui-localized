@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "keywords": ["firebase", "localized", "vue", "firebaseui"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/vue-firebaseui-localized.es.js",
